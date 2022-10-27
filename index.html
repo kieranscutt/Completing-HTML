@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kieran learning</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -17,56 +18,66 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Kieran Learning Frontend</h1>
-          <p>Going from an absolute beginner to a pro</p>
-          <button>Start Now</button>
+        <div class="row">
+          <div>
+            <h1>Kieran Learning Frontend</h1>
+            <p class="subheader">Going from an absolute beginner to a pro</p>
+            <button>Start Now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="home page image of laptop" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="home page image of laptop" />
-        </figure>
       </header>
     </section>
 
     <main>
       <section id="about">
         <h2>About Me</h2>
-        <div>
-          <p>
-            Well I am Kieran, learning how to code. Having a great time so far
-            having a lot of fun. Lets see if I can keep doing it. Anyway next
-            paragraph is going to be a load of gibberish.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero,
-            culpa sequi. Quaerat officia earum eveniet, nesciunt accusantium
-            possimus corporis esse in placeat nemo, neque temporibus iste
-            delectus accusamus quae molestias?
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Well I am Kieran, learning how to code. Having a great time so
+                far having a lot of fun. Lets see if I can keep doing it. Anyway
+                next paragraph is going to be a load of gibberish.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Libero, culpa sequi. Quaerat officia earum eveniet, nesciunt
+                accusantium possimus corporis esse in placeat nemo, neque
+                temporibus iste delectus accusamus quae molestias?
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="" />
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="" />
-        </figure>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="discord logo" />
-        </figure>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            voluptas, praesentium vitae labore repudiandae officia delectus
-            fugiat voluptates dignissimos repellat molestias ipsum neque nam
-            possimus! Quo alias eius et accusantium.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis blanditiis saepe voluptatem sint cupiditate illum ad,
-            autem neque. Consequuntur fugiat eum temporibus placeat ab nihil
-            voluptatum in odit? Enim, libero.
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <figure class="about__img--wrapper">
+              <img src="./assets/discord.png" alt="discord logo" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident voluptas, praesentium vitae labore repudiandae officia
+                delectus fugiat voluptates dignissimos repellat molestias ipsum
+                neque nam possimus! Quo alias eius et accusantium.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis blanditiis saepe voluptatem sint cupiditate illum
+                ad, autem neque. Consequuntur fugiat eum temporibus placeat ab
+                nihil voluptatum in odit? Enim, libero.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -76,18 +87,24 @@
           <label>Email</label>
           <input type="email" placeholder="debbie@example.com" />
           <label>Message</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button>submit</button>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Type here"
+          ></textarea>
+          <button>Contact Us</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <img src="./assets/FES.svg" alt="" />
-      <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
+      <img class="footer__logo" src="./assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
       </div>
       <p>Copywright Frontend Simplified</p>
     </footer>
